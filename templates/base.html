@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Automatic Birthday Wisher" />
+    <meta name="google" content="notranslate" />
+    <meta content="Ashutosh Krishna" name="author" />
+    <meta property="og:title" content="Automatic Birthday Wisher" />
+    <meta
+      property="og:description"
+      content="Wish your friends Happy Birthday at the earliest."
+    />
+    <meta
+      property="og:image"
+      content=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      data-ad-client="ca-pub-8354103933180400"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <style>
+      body {
+        font-family: "Baloo Thambi 2", cursive;
+      }
+      input.placeholder {
+        text-align: center;
+      }
+      #right {
+        float: right;
+        width: 120px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/"><strong>Py WISHER</strong></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'dashboard' %}">Dashboard</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About & Help
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a rel="noopener noreferrer" target="_blank" class="dropdown-item" href="http://ashutoshkrris.herokuapp.com/contact.html">Help</a>
+                <a rel="noopener noreferrer" target="_blank" class="dropdown-item" href="https://paypal.me/ashutoshbritish?locale.x=en_GB">Support Me</a>
+                <a rel="noopener noreferrer" target="_blank" class="dropdown-item" href="http://ashutoshkrris.herokuapp.com/">Developer</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href=""
+                target="_blank"
+                >Open Source</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+
+    {% block content %} {% endblock %}
+
+    <footer>
+      <div class="footer-copyright text-center py-3">
+        Facing problem or have suggestions?<br /><a rel="noopener noreferrer"
+          href="https://ashutoshkrris.herokuapp.com/contact.html"
+          target="_blank"
+          >Contact me</a
+        ><br /><br />Made with ❤️️ using Django <br />© 2020
+        <a rel="noopener noreferrer" href="http://ashutoshkrris.herokuapp.com/" target="_blank">
+          Ashutosh Krishna</a
+        >
+        <!-- Start of WebFreeCounter Code -->
+        <!-- <br />
+        <a href="https://www.webfreecounter.com/" target="_blank">
+          <img
+            src="https://www.webfreecounter.com/hit.php?id=guvfnfkq&nd=6&style=3"
+            border="0"
+            alt="free counter"
+          />
+        </a> -->
+        <!-- End of WebFreeCounter Code -->
+      </div>
+    </footer>
+  </body>
+</html>

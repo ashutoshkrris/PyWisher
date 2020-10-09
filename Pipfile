@@ -1,0 +1,22 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "*"
+django-import-export = "*"
+tablib = "*"
+apscheduler = "*"
+gunicorn = "*"
+python-decouple = "*"
+whitenoise = "*"
+psycopg2 = "*"
+dj-database-url = "*"
+django-storages = "*"
+boto3 = "*"
+
+[requires]
+python_version = "3.8"

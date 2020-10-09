@@ -1,0 +1,111 @@
+<head>
+    <title>Dashboard | Py WISHER</title>
+</head>
+{% extends 'base.html' %}
+{% block content %} 
+
+<div class="container shadow p-4">
+    <div class="row">
+        <div class="col-12 text-center py-2">
+            <h3 style="text-align: center;">Shorten Your URL</h3>
+        </div>
+        <div class="col-10 col-sm-10 col-md-6 mx-auto">
+
+            {% if messages %}
+                {% for msg in messages %}
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <center>{{msg}}</center>
+                    <button type="button" class="close" data-dismiss="alert" area-label="Close">
+                        <span area-hidden-true>&times;</span>
+                    </button>
+                </div>
+                {% endfor %}
+            {% endif %}
+            {% if error %}
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <center>{{ error }}</center>
+                <button type="button" class="close" data-dismiss="alert" area-label="Close">
+                    <span area-hidden-true>&times;</span>
+                </button>
+                </div>
+            {% endif %}
+
+            <form action="{% url 'uploader' %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="input-group">
+                    <input type="text" class="form-control" name="sender" placeholder="Sender's Name" id="" style="text-align: center;">
+                </div>
+                <br>
+                <div class="input-group" id="uploader">
+                    <div class="custom-file">
+                      <input type="file" name="myfile" class="custom-file-input" id="inputGroupFile01"
+                        aria-describedby="inputGroupFileAddon01" style="cursor: pointer; text-align: center;">
+                      <label class="custom-file-label" for="inputGroupFile01" style="text-align: center;">Choose file</label>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <center><input type="submit" class="btn btn-primary px-4" value="Upload"></center>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+    <div class="col-md-12">
+    <center>
+        <h4>Instructions : </h4>
+        <ul class="test">
+            <li> ➼ Your excelsheet must contain these fields with these column names only:</li>
+            <ol class="test mr-4">
+                <li>1. <b>ID</b></li>
+                <li>2. <b>Name</b></li>
+                <li>3. <b>Email</b></li>
+                <li>4. <b>Birthday</b></li>
+                <li>5. <b>Year</b></li>
+            </ol>
+            <li> ➼ Column ID should be empty and will be filled by our side.</li>
+            <li> ➼ Birthday must be in the format of YYYY-MM-DD</li>
+            <li> ➼ Year must be one less than current year so that we can wish those whose birthday has not come yet.</li>
+            <li> ➼ The file must end with .xlsx extension, else the uploader will pose error.</li> 
+        </ul>
+    </center>
+</div>
+</div>
+
+<style>
+    .customcontainer {
+        min-width: 100%;
+        border: 2px solid #1d1d1d;
+        border-radius: 5px;
+        max-width: 100%;
+        height: 100%;
+    }
+    ul.test,ol.test{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+<script>
+    $("input[id='inputGroupFile01']").change(function (e) {
+    var $this = $(this);
+    $this.next().html($this.val().split('\\').pop());
+});
+</script>
+
+</body>
+
+</html>
+
+{% endblock %}

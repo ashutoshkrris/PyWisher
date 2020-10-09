@@ -1,0 +1,1 @@
+web: gunicorn Birthday_Wisher.wsgi --log-file -
