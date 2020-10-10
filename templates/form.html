@@ -43,7 +43,7 @@
                     <input type="email" class="form-control" name="email" placeholder="Receiver's Email" id="" style="text-align: center;">
                 </div>
                 <div class="form-group">
-                    <input type="date" class="form-control" name="bday" placeholder="Birthday" id="" style="text-align: center;">
+                    <input type="date" class="form-control" name="bday" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Birthday" id="" style="text-align: center;">
                 </div>
                 
                 <div class="form-group">
@@ -67,9 +67,6 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-    }
-    input[type='date'] {
-      content: attr(placeholder)
     }
 </style>
 
