@@ -1,5 +1,5 @@
 <head>
-    <title>Upload Data | Py WISHER</title>
+    <title>Add Data | Py WISHER</title>
 </head>
 {% extends 'base.html' %}
 {% block content %} 
@@ -30,28 +30,30 @@
                 </div>
             {% endif %}
 
-            <form action="{% url 'uploader' %}" method="POST" enctype="multipart/form-data">
+            <form action="{% url 'add_form' %}" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
-                <div class="input-group">
+
+                <div class="form-group">
                     <input type="text" class="form-control" name="sender" placeholder="Sender's Name" id="" style="text-align: center;">
                 </div>
-                <br>
-                <div class="input-group" id="uploader">
-                    <div class="custom-file">
-                      <input type="file" name="myfile" class="custom-file-input" id="inputGroupFile01"
-                        aria-describedby="inputGroupFileAddon01" style="cursor: pointer; text-align: center;">
-                      <label class="custom-file-label" for="inputGroupFile01" style="text-align: center;">Choose file</label>
-                    </div>
-                </div>
-                <br>
                 <div class="form-group">
-                    <center><input type="submit" class="btn btn-primary px-4" value="Upload"></center>
+                    <input type="text" class="form-control" name="receiver" placeholder="Receiver's Name" id="" style="text-align: center;">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Receiver's Email" id="" style="text-align: center;">
+                </div>
+                <div class="form-group">
+                    <input type="date" class="form-control" name="bday" placeholder="Birthday" id="" style="text-align: center;">
+                </div>
+                
+                <div class="form-group">
+                    <center><input type="submit" class="btn btn-primary px-4" value="Add"></center>
                 </div>
             </form>
         </div>
     </div>
     <br>
-    <div class="col-md-12">
+    <!-- <div class="col-md-12">
     <center>
         <h4>Instructions : </h4>
         <ul class="test">
@@ -72,7 +74,7 @@
             <li> ➼ The file must end with .xlsx extension, else the uploader will pose error.</li> 
         </ul>
     </center>
-</div>
+</div> -->
 </div>
 
 <style>
