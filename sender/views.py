@@ -39,7 +39,7 @@ def sender(request):
             email.attach_alternative(html_content, "text/html")
             email.send()
             user = Person.objects.get(id=id_user)
-            user.year += 1
+            user.year = year_now
             user.save()
     return redirect(home)
 
