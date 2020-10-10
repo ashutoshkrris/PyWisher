@@ -1,8 +1,8 @@
 ![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-![GitHub stars](https://img.shields.io/github/stars/ashutoshkrris/Shorty?style=social)
-![GitHub forks](https://img.shields.io/github/forks/ashutoshkrris/Shorty?style=social)
-[![GitHub pull-requests](https://img.shields.io/github/issues-pr/ashutoshkrris/Shorty.svg)](https://GitHub.com/AM1CODES/Poke-Dex/pull/)
+![GitHub stars](https://img.shields.io/github/stars/ashutoshkrris/PyWisher?style=social)
+![GitHub forks](https://img.shields.io/github/forks/ashutoshkrris/PyWisher?style=social)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/ashutoshkrris/PyWisher.svg)](https://GitHub.com/ashutoshkrris/PyWisher/pull/)
 
 # PyWisher
 
