@@ -53,28 +53,6 @@
         </div>
     </div>
     <br>
-    <!-- <div class="col-md-12">
-    <center>
-        <h4>Instructions : </h4>
-        <ul class="test">
-            <li> ➼ Your excelsheet must contain these fields with these column names only:</li>
-            <ol class="test mr-4">
-                <li>1. <b>ID</b></li>
-                <li>2. <b>Sender</b></li>
-                <li>3. <b>Receiver</b></li>
-                <li>4. <b>Email</b></li>
-                <li>5. <b>Birthday</b></li>
-                <li>6. <b>Year</b></li>
-            </ol>
-            <li> ➼ Column ID should be empty and will be filled by our side.</li>
-            <li> ➼ Column Sender should be empty and will be filled by our side.</li>
-            <li> ➼ Column Receiver should Have the name of the person to be wished.</li>
-            <li> ➼ Birthday must be in the format of YYYY-MM-DD</li>
-            <li> ➼ Year must be one less than current year so that we can wish those whose birthday has not come yet.</li>
-            <li> ➼ The file must end with .xlsx extension, else the uploader will pose error.</li> 
-        </ul>
-    </center>
-</div> -->
 </div>
 
 <style>
@@ -89,6 +67,9 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
+    }
+    input[type='date']:after {
+      content: attr(placeholder)
     }
 </style>
 
