@@ -20,7 +20,7 @@ You can visit the site [here](http://pywisher.herokuapp.com/) or http://pywisher
 
 ## Working Demo
 
-* **Homepage(before login)**
+* **Homepage**
 
 <img src="https://github.com/ashutoshkrris/PyWisher/blob/development/demo/home.png" alt="Homepage" width=1000 height=500/>
 
