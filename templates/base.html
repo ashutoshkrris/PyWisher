@@ -132,7 +132,16 @@
           href="https://contact-ashutosh.herokuapp.com/"
           target="_blank"
           >Contact me</a
-        ><br /><br />Made with ❤️️ using Django <br />© 2020
+        >
+        <br /><br />
+        <form>
+          {% csrf_token %}
+          <script
+            src="https://checkout.razorpay.com/v1/payment-button.js"
+            data-payment_button_id="pl_G8CVXpvU5cP4VP"
+          ></script>
+        </form>
+        <br />Made with ❤️️ using Django <br />© 2020
         <a
           rel="noopener noreferrer"
           href="http://ashutoshkrris.herokuapp.com/"
