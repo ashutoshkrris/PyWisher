@@ -22,7 +22,7 @@ def sender(request):
         year_in_db = item['year']
         sender = item['sender'].split(" ")[0]
         receiver = item['receiver'].split(" ")[0]
-        if bday == today and year_in_db == int(year_now)-1:
+        if bday == today and year_in_db < int(year_now):
             context = {
                 "receiver": receiver,
                 "sender": sender,
