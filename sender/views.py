@@ -27,8 +27,8 @@ def sender(request):
                 "receiver": receiver.capitalize(),
                 "sender": sender,
             }
-            print(context)
-            html_content = render_to_string("email_temp.html", context)
+            print(f"Birthday Details : {context}")
+            html_content = render_to_string("email.html", context)
             text_content = strip_tags(html_content)
 
             email = EmailMultiAlternatives(
