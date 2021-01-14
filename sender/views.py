@@ -25,7 +25,7 @@ def sender(request):
         if bday == today and year_in_db < int(year_now):
             context = {
                 "receiver": receiver.capitalize(),
-                "sender": sender,
+                "sender": sender.capitalize(),
             }
             print(f"Birthday Details : {context}")
             html_content = render_to_string("email_temp.html", context)
