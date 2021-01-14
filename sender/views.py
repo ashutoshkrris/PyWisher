@@ -22,16 +22,17 @@ def sender(request):
         year_in_db = item['year']
         sender = item['sender'].split(" ")[0]
         receiver = item['receiver'].split(" ")[0]
-        if bday == today and year_in_db == int(year_now)-1:
+        if bday == today and year_in_db < int(year_now):
             context = {
-                "receiver": receiver,
+                "receiver": receiver.capitalize(),
                 "sender": sender,
             }
-            html_content = render_to_string("email.html", context)
+            print(context)
+            html_content = render_to_string("email_temp.html", context)
             text_content = strip_tags(html_content)
 
             email = EmailMultiAlternatives(
-                f"Happy Birthday {receiver}",
+                f"Happy Birthday {receiver.capitalize()}",
                 text_content,
                 "PyWisher <pywisher@gmail.com>",
                 [receiver_email]
