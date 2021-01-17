@@ -38,7 +38,7 @@ You can visit the site [here](http://pywisher.herokuapp.com/) or http://pywisher
 
 * **Birthday Card**
 
-<img src="https://github.com/ashutoshkrris/PyWisher/blob/development/demo/card.png" alt="Birthday Card" width=1000 height=500/>
+[Imgur](https://i.imgur.com/IiVT7Sn.png)
 
 
 ## Getting Started
