@@ -34,11 +34,11 @@ You can visit the site [here](http://pywisher.herokuapp.com/) or http://pywisher
 
 * **Email**
 
-<img src="https://github.com/ashutoshkrris/PyWisher/blob/development/demo/email.png" alt="Email" width=1000 height=500/>
+[Imgur](https://i.imgur.com/IiVT7Sn.png)
 
 * **Birthday Card**
 
-[Imgur](https://i.imgur.com/IiVT7Sn.png)
+<img src="https://github.com/ashutoshkrris/PyWisher/blob/development/demo/card.png" alt="Birthday Card" width=1000 height=500/>
 
 
 ## Getting Started
