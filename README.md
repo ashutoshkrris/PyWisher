@@ -34,7 +34,7 @@ You can visit the site [here](http://pywisher.herokuapp.com/) or http://pywisher
 
 * **Email**
 
-[Imgur](https://i.imgur.com/IiVT7Sn.png)
+<img src="https://i.imgur.com/IiVT7Sn.png" alt="Email Template"/>
 
 * **Birthday Card**
 
