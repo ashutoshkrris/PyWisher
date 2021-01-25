@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from uploader.views import home, dashboard, uploader, add_form
 from sender.views import sender, email_temp
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+     path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
     path('', home, name="home"),
     path('dashboard/', dashboard, name="dashboard"),
     path('add/', add_form, name="add_form"),
