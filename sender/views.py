@@ -34,7 +34,7 @@ def sender(request):
             email = EmailMultiAlternatives(
                 f"Happy Birthday {receiver.capitalize()}",
                 text_content,
-                "PyWisher <pywisher@gmail.com>",
+                "PyWisher <wisher@pywisher.ml>",
                 [receiver_email]
             )
             email.attach_alternative(html_content, "text/html")
