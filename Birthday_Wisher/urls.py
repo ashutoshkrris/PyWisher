@@ -19,6 +19,8 @@ from django.urls import path
 from uploader.views import home, dashboard, uploader, add_form
 from sender.views import sender, email_temp
 from django.views.generic import TemplateView
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,3 +32,7 @@ urlpatterns = [
     path('sender/', sender, name="sender"),
     path('wish/<str:sender>/<str:receiver>/', email_temp, name="email_temp")
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL,
+                          document_root=settings.STATIC_ROOT)
