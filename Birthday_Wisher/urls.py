@@ -24,7 +24,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-     path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
+    path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
     path('', home, name="home"),
     path('dashboard/', dashboard, name="dashboard"),
     path('add/', add_form, name="add_form"),
