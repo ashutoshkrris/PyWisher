@@ -10,7 +10,7 @@ We often forget birthdays of our friends and families. But PyWisher will never. 
 
 ## Website Link 
 
-You can visit the site [here](http://pywisher.herokuapp.com/) or http://pywisher.herokuapp.com/
+You can visit the site [here](https://pywisher.ml/) or https://pywisher.ml/
 
 ## Features 
 
@@ -34,7 +34,7 @@ You can visit the site [here](http://pywisher.herokuapp.com/) or http://pywisher
 
 * **Email**
 
-<img src="https://i.imgur.com/IiVT7Sn.png" alt="Email Template"/>
+<img src="https://i.imgur.com/gHuhMmN.png" alt="Email Template"/>
 
 * **Birthday Card**
 
